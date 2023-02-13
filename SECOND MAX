@@ -1,0 +1,20 @@
+
+# include<stdio.h>
+int main(){
+    int max=0,sec_max=0;
+    int arr[5];
+    int size=sizeof(arr)/sizeof(arr[0]);
+    for(int start=0;start<size;start++){
+        scanf("%d",&arr[start]);
+    }
+    for(int start=0;start<size;start++){
+        if(max<arr[start]){
+            sec_max=max;
+            max=arr[start];
+        }
+        else if(max <arr[start] && sec_max>arr[start]){
+            sec_max=arr[start];
+        }
+    }
+    printf("%d ",sec_max);
+}
