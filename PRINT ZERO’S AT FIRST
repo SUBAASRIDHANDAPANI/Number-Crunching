@@ -1,0 +1,25 @@
+# include<stdio.h>
+int main(){
+    int zerocount=0;
+    int arr[5];
+    int size=sizeof(arr)/sizeof(arr[0]);
+    for(int start=0;start<size;start++){
+        scanf("%d",&arr[start]);
+    }
+   for(int start=0;start<size;start++){
+       if(arr[start]==0){
+           zerocount++;
+       }
+   }
+   for(int start=0;start<size;start++){
+       if(zerocount>start){
+           printf("0");
+       }
+       else{
+           printf("1");
+       }
+      
+       
+   }
+    
+}
