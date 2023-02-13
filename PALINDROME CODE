@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    long int num,rev=0,temp;
+    int digit;
+    scanf("%ld",&num);
+    temp=num;
+    while(num){
+        digit =num%10;
+        rev=rev*10+digit;
+        num=num/10;
+        
+    }
+    if(temp==rev){
+        printf("pal");
+    }
+    else{
+        printf("no");
+    }
+    
+    return 0;
+}
