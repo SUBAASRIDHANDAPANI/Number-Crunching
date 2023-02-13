@@ -1,0 +1,21 @@
+
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    int num,count=0;
+    scanf("%d",&num);
+    for(int start=2;start<=sqrt(num);start++){
+        if(num%start==0){
+            count++;
+        }
+    }
+    if(count==0){
+        printf("prime number");
+    }
+    else{
+        printf("not a prime number");
+    }
+
+    return 0;
+}
